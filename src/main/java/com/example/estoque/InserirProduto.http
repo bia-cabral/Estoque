@@ -1,0 +1,23 @@
+#POST http://localhost:8080/api/produtos/inserir
+#Content-Type: application/json
+#
+#{
+#  "nome": "Fraldinha",
+#  "descricao": "Carne adequada para churrasco",
+#  "preco": 39.80,
+#  "qntEstoque": 200
+#}
+
+#DELETE http://localhost:8080/api/produtos/excluir/17
+
+#PUT http://localhost:8080/api/produtos/atualizar/13
+#Content-Type: application/json
+#
+#{
+#  "nome": "Fraldinha",
+#  "descricao": "Carne adequada para churrasco",
+#  "preco": 39.80,
+#  "qntEstoque": 200
+#}
+
+GET http://localhost:8081/api/produtos/selecionar
