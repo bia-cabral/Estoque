@@ -13,19 +13,19 @@ public class Produto {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Schema(description = "Representa o identificador do produto")
     private long id;
-    @NotNull(message = "O nome não pode ser nulo! 😠")
-    @Size(min = 2, message = "O nome deve ter no mínimo 2 caracteres! 😠")
+    @NotNull(message = "O nome não pode ser nulo!")
+    @Size(min = 2, message = "O nome deve ter no mínimo 2 caracteres!")
     @Schema(description = "Representa o nome do produto no sistema")
     private String nome;
     @Schema(description = "Representa a descrição do produto no sistema")
     private String descricao;
-    @NotNull(message = "O preço não pode ser nulo! 😠")
-    @Min(value = 0, message = "O preço deve ser pelo menos 0! 😠")
+    @NotNull(message = "O preço não pode ser nulo!")
+    @Min(value = 0, message = "O preço deve ser pelo menos 0!")
     @Schema(description = "Representa o preço do produto no sistema")
     private double preco;
     @Column (name = "quantidadeestoque")
-    @NotNull(message = "O estoque não pode ser nulo! 😠")
-    @Min(value = 0, message = "O estoque deve ser pelo menos 0! 😠")
+    @NotNull(message = "O estoque não pode ser nulo!")
+    @Min(value = 0, message = "O estoque deve ser pelo menos 0!")
     @Schema(description = "Representa a quantidade de estoque de um produto no sistema")
     private int qntEstoque;
 
